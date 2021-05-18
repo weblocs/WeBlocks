@@ -86,7 +86,7 @@ strong {
 .section.first-section {
   position: relative;
   height: 1000px;
-  padding-bottom: 0px;
+  padding-bottom: 120px;
 }
 
 .section.privacy-section {
@@ -96,6 +96,11 @@ strong {
 
 .section.privacy-section.last {
   padding-bottom: 120px;
+}
+
+.section.small-section {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .container {
@@ -110,7 +115,7 @@ strong {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  max-width: 500px;
+  max-width: 457px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -121,6 +126,17 @@ strong {
   -ms-flex-align: center;
   align-items: center;
   text-align: center;
+}
+
+.container.right-align-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .intro-grid {
@@ -571,6 +587,8 @@ strong {
 }
 
 .show-video-box {
+  position: relative;
+  width: 100%;
   max-width: 788px;
   padding: 40px;
   border-style: solid;
@@ -597,6 +615,7 @@ strong {
 }
 
 .video-number {
+  margin-top: 2px;
   margin-right: 32px;
 }
 
@@ -647,6 +666,47 @@ strong {
   border-width: 2px;
   border-color: #686868;
   border-radius: 100%;
+}
+
+.button-element-video {
+  position: absolute;
+  left: 35px;
+  top: -3px;
+  right: auto;
+  bottom: auto;
+  width: 47px;
+  border-top: 1px solid #141414;
+}
+
+.button-element-video.box-2 {
+  left: 430px;
+}
+
+.button-element-video.box-3 {
+  left: 308px;
+}
+
+.button-element-bottom-video {
+  position: absolute;
+  left: auto;
+  top: 100%;
+  right: 36px;
+  bottom: auto;
+  width: 48px;
+  margin-top: 0px;
+  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+}
+
+.button-element-bottom-video.box-2 {
+  left: 36px;
+  right: auto;
+}
+
+.button-element-bottom-video.box-3 {
+  left: 20px;
+  right: auto;
 }
 
 @media screen and (max-width: 991px) {
@@ -763,13 +823,6 @@ strong {
 }
 
 #w-node-f79229ba-6d2c-0547-2041-12b8deda84a5-15022919 {
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
-}
-
-#w-node-_63d999b9-a658-24e3-f3cd-a254d4ce4e67-15022919 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
